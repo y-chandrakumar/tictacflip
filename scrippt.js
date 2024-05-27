@@ -182,24 +182,24 @@ grid.addEventListener("click", (event) => {
                     event.target.classList.add("X");
 
                     if(currentcoin=="("){
-                        event.target.style.backgroundImage = "url('files/chevron-left-red.svg')";
+                        event.target.style.backgroundImage = "url('chevron-left-red.svg')";
                         }
         
         
                         else{
                             event.target.style.backgroundPosition="right";
-                            event.target.style.backgroundImage = "url('files/chevron-right-red.svg')";
+                            event.target.style.backgroundImage = "url('chevron-right-red.svg')";
                         }
                     
                }
                 else{
                     event.target.classList.add("O"); 
                     if(currentcoin=="("){
-                        event.target.style.backgroundImage = "url('files/chevron-left.svg')";
+                        event.target.style.backgroundImage = "url('chevron-left.svg')";
                         }
                         else{    
                             event.target.style.backgroundPosition="right";  
-                       event.target.style.backgroundImage = "url('files/chevron-right.svg')";
+                       event.target.style.backgroundImage = "url('chevron-right.svg')";
                         }   
                 }
                 
@@ -242,11 +242,11 @@ grid.addEventListener("click", (event) => {
                 if( event.target.textContent=="("){
                     if(currentPlayer=="X"){
                         event.target.style.backgroundPosition="right"; 
-                        event.target.style.backgroundImage = "url('files/chevron-right-red.svg')";
+                        event.target.style.backgroundImage = "url('chevron-right-red.svg')";
                     }
                     else{
                         event.target.style.backgroundPosition="right"; 
-                        event.target.style.backgroundImage = "url('files/chevron-right.svg')";
+                        event.target.style.backgroundImage = "url('chevron-right.svg')";
                     }
                 event.target.textContent=")"
             
@@ -256,10 +256,10 @@ grid.addEventListener("click", (event) => {
                    
                     if(currentPlayer=="X"){
 
-                        event.target.style.backgroundImage = "url('files/chevron-left-red.svg')";
+                        event.target.style.backgroundImage = "url('chevron-left-red.svg')";
                     }
                     else{
-                        event.target.style.backgroundImage = "url('files/chevron-left.svg')";
+                        event.target.style.backgroundImage = "url('chevron-left.svg')";
                     }
                     
                     event.target.textContent="("}
