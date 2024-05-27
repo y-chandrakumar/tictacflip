@@ -1,0 +1,160 @@
+*{
+margin: 0;
+
+}
+.start-div {
+    text-align: center;
+    margin-top: 1vw; 
+}
+
+.coin{
+    /* background-color: pink; */
+    margin: 2vh auto ;
+    display: none;
+    justify-content: space-around;
+    width: 50vw;
+}
+#one{
+    background-color: yellow;
+    font-size: xx-large;
+    width: 5vw;
+}
+#two{
+    font-size: xx-large;
+    width: 5vw;
+}
+
+.game-div {
+    display: none; 
+    text-align: center;
+    margin-top: 1vw; /
+}
+.butuns{
+    display: grid;
+    align-items: center;
+    
+    justify-content:center; 
+    height: 50vh;
+
+}
+.grid {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 0.5vw; Responsive gap between cells */
+    margin: 0 auto; /* Center-align the grid */
+    width: 30.3vw; 
+    border: 0.2vw solid black; /* Responsive border */
+}
+
+.cell {
+    width: 10vw; /* Responsive cell width */
+    height: 10vw; /* Responsive cell height */
+    border: 0.1vw solid black; /* Responsive border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw; /* Responsive font size */
+   
+}
+.scell{
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat; /* Adjust as needed */
+    /* padding: auto; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    border: 0.001vw dotted black;
+    align-items: center;
+    color: transparent;
+    cursor: pointer;
+   
+    font-size: 10vw;
+    animation: fillEffect 2s linear forwards;
+  
+}
+
+.btn {
+    cursor: pointer; /* Show pointer cursor on hover */
+    margin: auto;
+   
+}
+.sumit{
+    width: 99vw;
+    margin: auto;
+    margin-top: 5vh;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: red; */
+}
+
+.level{
+    display: none;
+}
+.winning-cell {
+   
+    /* background-color: lightblue; */
+    transition: transform 1s ease-in-out; 
+    background: linear-gradient(to right, green 0%, yellow 50%, transparent 50%, transparent 100%);
+    background-size: 200% 100%;
+    animation: fillEffect 2s forwards infinite;
+}
+
+
+@keyframes fillEffect {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+
+
+
+
+
+
+.mater{
+    font-size: 3vw;
+    user-select: none;
+    
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+
+    #one{
+        width: 10vw;
+    }
+    #two{
+        width: 10vw;
+    }
+    .game-div{
+        margin-top: 10vh;
+    }
+    .mater{
+        font-size: 6vw;
+    }
+     .sumit{
+        margin-top: 10vh;
+     }
+     .btn{
+        width: 20vw;
+     }
+    .start-div{
+        margin-top: 10vh;
+    }
+    .grid {
+        width: 68vw; /* Adjust grid width for smaller screens */
+    }
+
+    .cell {
+        width: 22vw; 
+        height: 22vw;
+        font-size: 6vw;
+    }
+}
